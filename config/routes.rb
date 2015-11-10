@@ -12,9 +12,9 @@ Rails.application.routes.draw do
 
   get '/performers/:id/edit' => 'performers#edit'
 
-  post 'performers/:id' => 'performers#update'
+  post '/performers/:id' => 'performers#update'
 
-  delete 'performers/:id' => 'performers#destroy'
+  delete '/performers/:id' => 'performers#destroy'
 
 
   # Example of regular route:
