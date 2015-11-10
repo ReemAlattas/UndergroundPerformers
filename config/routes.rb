@@ -2,6 +2,21 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root 'welcome#index'
 
+  get '/performers' => 'performers#index'
+
+  get '/performers/new' => 'performers#new'
+
+  post '/performers' => 'performers#create'
+
+  get '/performers/:id' => 'performers#show'
+
+  get '/performers/:id/edit' => 'performers#edit'
+
+  post 'performers/:id' => 'performers#update'
+
+  delete 'performers/:id' => 'performers#destroy'
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
