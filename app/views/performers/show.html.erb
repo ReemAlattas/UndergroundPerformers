@@ -1,0 +1,12 @@
+<p>
+  <strong>Name:</strong>
+  <%= @performer.name %>
+</p>
+ 
+<p>
+  <strong>Type:</strong>
+  <%= @performer.type %>
+</p>
+
+<%= link_to 'Edit', edit_performer_path(@performer) %> |
+<%= link_to 'Back', performers_path %>

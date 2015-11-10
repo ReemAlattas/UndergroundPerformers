@@ -2,19 +2,21 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root 'welcome#index'
 
-  get '/performers' => 'performers#index'
+  resources :performers
 
-  get '/performers/new' => 'performers#new'
+  #get '/performers' => 'performers#index'
 
-  post '/performers' => 'performers#create'
+  #get '/performers/new' => 'performers#new'
 
-  get '/performers/:id' => 'performers#show'
+  #post '/performers' => 'performers#create'
 
-  get '/performers/:id/edit' => 'performers#edit'
+  #get '/performers/:id' => 'performers#show'
 
-  post '/performers/:id' => 'performers#update'
+  #get '/performers/:id/edit' => 'performers#edit'
 
-  delete '/performers/:id' => 'performers#destroy'
+  #post '/performers/:id' => 'performers#update'
+
+  #delete '/performers/:id' => 'performers#destroy'
 
 
   # Example of regular route:
